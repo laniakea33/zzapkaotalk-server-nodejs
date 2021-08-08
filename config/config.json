@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "zzapkaotalk",
+    "database": "zzapkaotalk",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "zzapkaotalk",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "zzapkaotalk",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

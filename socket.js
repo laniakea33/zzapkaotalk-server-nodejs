@@ -66,9 +66,9 @@ module.exports = (server, app) => {
             console.log("type of userObj : " + typeof userObj);
             var message = '';
             if (msg['type'] == 'text') {
-                msg['message'];
+                message = msg['message'];
             } else {
-                '사진';
+                message = '사진';
             }
 
             const t1 = await sequelize.transaction();
@@ -85,6 +85,7 @@ module.exports = (server, app) => {
                 chat.to(roomNo).emit('chat', chatObj);
 
                 console.log("chatObj : ", chatObj);
+                console.log("roomUpdateObj : ", roomUpdateObj);
                 room.emit('update', roomUpdateObj);
             } catch(error) {
                 await t1.rollback();
